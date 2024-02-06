@@ -12,3 +12,92 @@
 background : #212529
 color : #dee2e6
 */
+
+body{
+    height: 100vh;
+    background-color: #212529;
+    color : #dee2e6
+}
+
+.area-1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    gap: 15px;
+}
+
+.area-1 .picture img{
+  width: 300px;
+  border-radius: 5px;
+}
+
+.description{
+    width: 600px;
+    line-height: 1.2rem;
+    text-align: justify;
+}
+
+.description .title{
+    font-family: "Montserrat";
+    font-weight: bold;
+}
+
+.second-title{
+    margin-top: 5% ;
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.title-projects{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.area-jobs{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: auto;
+    margin-top: 5% ;
+}
+
+.btn{
+    transition: 0.5s all;
+    background-color: #212529;
+    color: #dee2e6;
+}
+
+.title-contacts{
+    margin-top: 5%;
+    text-align: center;
+}
+
+footer{
+  margin-top: 3%;
+   width: 100%;
+   gap: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+
+footer img{
+    width: 50px;
+    padding: 5px;
+    border-radius: 50px;
+    transition: 0.5s all;
+}
+
+footer img:hover{
+    background-color: white;
+}
