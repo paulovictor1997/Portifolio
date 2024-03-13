@@ -25,7 +25,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 15px 10px;
-    gap: 15px;
+    gap: 20px;
 }
 
 .area-1 .picture img{
@@ -35,13 +35,34 @@ body{
 
 .description{
     width: 600px;
-    line-height: 1.2rem;
+    line-height: 1.3rem;
     text-align: justify;
 }
 
 .description .title{
     font-family: "Montserrat";
     font-weight: bold;
+}
+
+.card{
+    background-color: #dee2e6;
+}
+
+.transition{
+    visibility: hidden;
+}
+
+.skills{
+    padding: 10px;
+}
+
+.img-tech{
+    padding: 10px;
+}
+
+.img-tech img{
+    width: 50px;
+    padding: 5px;
 }
 
 .second-title{
@@ -53,7 +74,7 @@ body{
 }
 
 .title-projects{
-    margin-top: 5%;
+    margin-top: 8%;
     text-align: center;
 }
 

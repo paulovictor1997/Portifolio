@@ -16,6 +16,10 @@
         width: 300px !important;
     }
 
+    .skills{
+        text-align: center;
+    }
+
     .description .title{
        text-align: center;
        margin: auto;
