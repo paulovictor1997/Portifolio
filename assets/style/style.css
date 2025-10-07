@@ -1,119 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Inter",'arial';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", 'arial';
 }
 
-body{
-    height: 100vh;
-    background-color: #212529;
-    color : #dee2e6
+body {
+  background-color: #212529;
+  color: #dee2e6;
 }
 
-.area-1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 10px;
+/* HERO */
+.area-1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.area-1 .picture img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+}
+.area-1 .picture img:hover {
+  transform: scale(1.05);
+}
+
+.description {
+  max-width: 600px;
+  line-height: 1.6rem;
+}
+.description .title {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.description .text {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* SKILLS */
+.skills {
+  padding: 50px 20px;
+  text-align: center;
+}
+.second-title {
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.img-tech img {
+  width: 60px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+.img-tech img:hover {
+  transform: translateY(-8px);
+}
+
+/* PROJETOS */
+.title-projects {
+  text-align: center;
+  margin-top: 60px;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  font-weight: bold;
+}
+.area-jobs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 40px auto;
+}
+.card {
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.btn {
+  transition: 0.3s all;
+  background-color: #212529;
+  color: #dee2e6;
+}
+.btn:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+footer img {
+  width: 50px;
+  border-radius: 50%;
+  padding: 8px;
+  transition: 0.3s;
+}
+footer img:hover {
+  background-color: #fff;
+}
+
+/* Responsividade */
+@media(max-width:900px) {
+  .area-1 {
+    flex-direction: column;
+    text-align: center;
     gap: 20px;
-}
-
-.area-1 .picture img{
-  width: 300px;
-  border-radius: 5%;
-}
-
-.description{
-    width: 600px;
-    line-height: 1.3rem;
-    text-align: justify;
-}
-
-.description .title{
-    font-family: "Montserrat";
-    font-weight: bold;
-}
-
-.card{
-    background-color: #dee2e6;
-}
-
-.transition{
-    visibility: hidden;
-}
-
-.skills{
-    padding: 10px;
-}
-
-.img-tech{
-    padding: 10px;
-}
-
-.img-tech img{
-    width: 50px;
-    padding: 5px;
-}
-
-.second-title{
-    margin-top: 5% ;
-    font-family: "Montserrat";
+  }
+  .area-1 .picture img {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  .description {
+    max-width: 90%;
+  }
+  .description .title {
     text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.title-projects{
-    margin-top: 8%;
+  }
+  .description .text {
+    font-size: 15px;
     text-align: center;
-}
-
-.area-jobs{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin: auto;
-    margin-top: 5% ;
-}
-
-.btn{
-    transition: 0.5s all;
-    background-color: #212529;
-    color: #dee2e6;
-}
-
-.title-contacts{
-    margin-top: 5%;
-    text-align: center;
-}
-
-footer{
-  margin-top: 3%;
-   width: 100%;
-   gap: 10px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-}
-
-footer a{
-    text-decoration: none;
-}
-
-
-footer img{
-    width: 50px;
-    padding: 5px;
-    border-radius: 50px;
-    transition: 0.5s all;
-}
-
-footer img:hover{
-    background-color: white;
+  }
+  .area-jobs {
+    flex-direction: column;
+    align-items: center;
+  }
 }

@@ -11,7 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--Styles-->
-    <link rel="stylesheet" href="assets/style/mobile.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="assets/js/script.js" defer></script>
@@ -21,38 +20,39 @@
     primeira oportunidade na área de programação, como programador front-end.">
 </head>
 <body>
-    <main class="area-1">
-        <div class="picture">
-            <img src="assets/img/eu1.jpg" alt="Victor">
-        </div>
-        <article class="description">
-            <h1 class="title">Olá, me chamo Paulo Victor.</h1>
-            <p class="text">
-                Tenho 28 anos,sou natural de Maceió, onde cresci e me formei em 
-                Sistemas de Informação pela Faculdade Estácio de Alagoas. E estou procurando, minha
-                primeira oportunidade na área de programação, como programador front-end.
-                Durante meus estudos, tive a chance de trabalhar em diversos projetos pessoais, 
-                onde pude aprimorar minhas habilidades e aprender a colaborar efetivamente em equipe.
-                Segue abaixo um pouco do meu trabalho. A maioria desses projetos, foram tirados do site
-                Front-End mentor. Mas também tem projetos autorais. Email : paulovictornunes97@gmail.com
-            </p>
+    <!-- HERO -->
+  <main class="area-1 transition">
+    <div class="picture">
+      <img src="assets/img/eu.jpg" alt="Foto de Paulo Victor">
+    </div>
+    <div class="description">
+      <h1 class="title">Olá, eu sou Paulo Victor 👋</h1>
+      <p class="text">
+        Tenho 28 anos,sou natural de Maceió, onde cresci e me formei em 
+        Sistemas de Informação pela Faculdade Estácio de Alagoas. E estou procurando, minha
+        primeira oportunidade na área de programação, como programador front-end.
+        Durante meus estudos, tive a chance de trabalhar em diversos projetos pessoais, 
+        onde pude aprimorar minhas habilidades e aprender a colaborar efetivamente em equipe.
+        Segue abaixo um pouco do meu trabalho. A maioria desses projetos, foram tirados do site
+        Front-End mentor. Mas também tem projetos autorais. Email : paulovictornunes97@gmail.com
+      </p>
+      <a href="#projects" class="btn btn-primary mt-3">Ver Projetos</a>
+    </div>
+  </main>
 
-            <section class="skills">
-               <div class="skill-title">
-              </p>Atualmente estou focando meus estudos com essas tecnologias: </p>
-               </div>
-               <div class="img-tech">
-                <img src="assets/img-tech/html5-original-wordmark.svg" alt="html5-original-wordmark">
-                <img src="assets/img-tech/css3-original.svg" alt="css3-original">
-                <img src="assets/img-tech/sass-original.svg" alt="sass-original">
-                <img src="assets/img-tech/javascript-original.svg" alt="javascript-original">
-                <img src="assets/img-tech/react-original.svg" alt="react-original">
-               </div> 
-            </section>
-        </article>
-    </main>
-    <h2 class="title-projects">PROJETOS</h2>
-    <section class="area-jobs">
+  <!-- SKILLS -->
+  <section class="skills transition">
+    <h2 class="second-title">Minhas Skills</h2>
+    <div class="img-tech d-flex justify-content-center flex-wrap">
+      <img src="assets/img-tech/html5-original-wordmark.svg" alt="HTML">
+      <img src="assets/img-tech/css3-original.svg" alt="CSS">
+      <img src="assets/img-tech/javascript-original.svg">
+      <img src="assets/img-tech/react-original.svg" alt="React">
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section id="projects" class="area-jobs">
       <div class="card transition" style="width: 18rem;">
         <img src="assets/prints/rest.jpg" class="card-img-top" alt="Rest Countries API">
         <div class="card-body">
@@ -176,17 +176,12 @@
     </div>
         
     </section>
-    <h2 class="title-contacts">Redes Sociais</h2>
-    <footer>
-        <a href="https://www.linkedin.com/in/paulo-victor-40406a209/">
-            <img src="assets/img/linkedin.svg" alt="linkedin-icon">
-        </a>
-        <a href="https://github.com/paulovictor1997" target="_blank">
-            <img src="assets/img/github.svg" alt="github-icon">
-        </a>
-        <a href="https://www.instagram.com/paulo.victor.97/" target="_blank">
-            <img src="assets/img/instagram.svg" alt="instagram-icon">
-        </a>
-    </footer>
+
+  <!-- FOOTER -->
+  <footer class="transition">
+    <a href="https://github.com/paulovictor1997" target="_blank"><img src="assets/img/github.svg" alt="GitHub"></a>
+    <a href="https://www.linkedin.com/in/paulo-victor-40406a209/" target="_blank"><img src="assets/img/linkedin.svg" alt="LinkedIn"></a>
+    <a href="https://www.instagram.com/paulo.victor.97/" target="_blank" ><img src="assets/img/instagram.svg" alt="Instagram"></a>
+  </footer>
 </body>
 </html>
