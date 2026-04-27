@@ -29,6 +29,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -38,6 +39,7 @@ body {
   font-weight: 300;
   line-height: 1.7;
   overflow-x: hidden;
+  width: 100%;
 }
 
 /* Grain overlay sutil */
@@ -228,6 +230,8 @@ body::before {
 
 .img-tech {
   gap: 16px;
+  padding: 0 16px;
+  max-width: 100%;
 }
 
 .tech-item {
@@ -235,12 +239,14 @@ body::before {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 20px 24px;
+  padding: 20px 16px;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  min-width: 100px;
+  flex: 1 1 90px;
+  max-width: 140px;
+  min-width: 0;
 }
 
 .tech-item:hover {
@@ -283,10 +289,11 @@ body::before {
 
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
   max-width: 1200px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .card {
@@ -427,19 +434,29 @@ footer img:hover {
 
   .description {
     max-width: 90%;
+    width: 100%;
   }
 
   .hero-actions {
     justify-content: center;
   }
 
+  .skills {
+    padding: 60px 16px;
+  }
+
+  .img-tech {
+    gap: 12px;
+    padding: 0 8px;
+  }
+
   .cards-grid {
     grid-template-columns: 1fr;
-    max-width: 400px;
+    max-width: 100%;
   }
 
   .area-jobs {
-    padding: 60px 20px;
+    padding: 60px 16px;
   }
 }
 
@@ -451,5 +468,34 @@ footer img:hover {
   .second-title,
   .title-projects {
     font-size: 1.8rem;
+  }
+
+  .tech-item {
+    padding: 14px 12px;
+    flex: 1 1 70px;
+  }
+
+  .tech-item img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .badge-tag {
+    font-size: 0.72rem;
+    padding: 4px 10px;
+  }
+
+  .area-1 {
+    padding: 48px 16px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    text-align: center;
   }
 }
